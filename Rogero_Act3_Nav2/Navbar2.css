@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+}
+.navbar label {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    border-radius: 3%;
+}
+.navbar input[type="radio"] {
+    display: none;
+}
+.navbar input[type="radio"]:checked + label {
+    background-color: #04bb78;
+    color: white;
+}
+.tab-content.active {
+    display: block;
+    border-top: 5px solid #04bb78;
+}
